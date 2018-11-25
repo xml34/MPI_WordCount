@@ -14,7 +14,7 @@ class diccionario:
 		word_list=text.split()
 
 		for word in word_list:
-			self.x[word] = self.x.get(word, 0) + 1
+			x[word] = x.get(word, 0) + 1
 		self.d=x
 
 	def getId(self):
