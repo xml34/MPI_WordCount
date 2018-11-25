@@ -11,7 +11,7 @@ from mpi4py import MPI
 
 #word = input('introduce la palabra entre comillas: ')
 def top10():
-	print (sys.argv[1])
+	#print (sys.argv[1])
 	lista1=[]
 	lista2=[]
 	lista3=[]
