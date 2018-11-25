@@ -3,7 +3,7 @@ class diccionario:
 	tittle=None
 	count=None
 	
-	def __init__(self,text,ide,tittle,palabra):
+	def __init__(self,text,ide,tittle):
 		d={}
 		self.ide=ide
 		self.tittle=tittle
