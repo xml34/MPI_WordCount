@@ -15,7 +15,7 @@ class diccionario:
 
 		for word in word_list:
 			d[word] = d.get(word, 0) + 1
-		self.count=d[palabra]
+		self.count=d["house"]
 
 
 	def getId(self):
