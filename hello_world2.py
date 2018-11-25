@@ -6,7 +6,6 @@ Created today bby
 from listaDiccionarios import *
 import pandas as pd
 import numpy as np
-import sys
 from mpi4py import MPI
 
 #word = input('introduce la palabra entre comillas: ')
