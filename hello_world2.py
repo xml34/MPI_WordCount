@@ -6,9 +6,9 @@ from mpi4py import MPI
 from listaDiccionarios import *
 import pandas as pd
 
+word = input('introduce la palabra entre comillas: ')
 
-def top10():
-	word = input('introduce la palabra entre comillas: ')
+def top10(word):
 	comm = MPI.COMM_WORLD
 	print ('My rank is', comm.rank)
 	lista1=[]
@@ -36,6 +36,6 @@ def top10():
 	return lista1,lista2,lista3
 
 
-l1,l2,l3=top10()
+l1,l2,l3=top10(word)
 print(l1)
 
