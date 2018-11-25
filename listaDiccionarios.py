@@ -2,20 +2,15 @@ import pandas as pd
 from diccionario import * #.getId .getTittle .getCount
 
 class listaDiccionarios:
-
-	dicionarios=[]
-
+	diccionarios=[]
 
 
 	def __init__(self,csv):
 		contenidos=csv['content']
 		tittles=csv['title']
 		ide=csv['id']
-		dic=None
 		for i in range(len(ide)):
-			dic=diccionario(contenidos[i],ide[i],tittles[i])
-			self.diccionarios.append(dic)
-			dic=None
+			self.diccionarios.append(diccionario(contenidos[i],ide[i],tittles[i]))
 		#return self.diccionarios
 
 	def searchTop10(self,word):
