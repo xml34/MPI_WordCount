@@ -2,11 +2,12 @@
 Created today bby
 @author: XML34
 """
-from mpi4py import MPI
+
 from listaDiccionarios import *
 import pandas as pd
 
 word = input('introduce la palabra entre comillas: ')
+from mpi4py import MPI
 
 def top10(word):
 	comm = MPI.COMM_WORLD
