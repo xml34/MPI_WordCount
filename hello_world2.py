@@ -20,14 +20,12 @@ def top10():
 	    art1=pd.read_csv('../../../opt/datasets/articles1.csv',header=0)
 	    lD=listaDiccionarios(art1)
 	    lista1=lD.searchTop10(sys.argv[1]+"")
-	    print(lista1)
 
 	if comm.rank == 2:
 	    #print ('Haciendo la tarea del nodo 2')
 	    art2=pd.read_csv('../../../opt/datasets/articles2.csv',header=0)
 	    lD=listaDiccionarios(art2)
 	    lista2=lD.searchTop10(sys.argv[1]+"")
-	    print(lista2)
 
 
 	if comm.rank == 3:
@@ -35,7 +33,6 @@ def top10():
 	    art3=pd.read_csv('../../../opt/datasets/articles3.csv',header=0)
 	    lD=listaDiccionarios(art3)
 	    lista3=lD.searchTop10(sys.argv[1]+"")
-	    print(lista3)
 
 	return lista1,lista2,lista3
 
