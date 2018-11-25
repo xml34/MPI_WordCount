@@ -3,7 +3,7 @@ class diccionario:
 	tittle=None
 	count=None
 	
-	def __init__(self,text,ide,tittle,word):
+	def __init__(self,text,ide,tittle,palabra):
 		d={}
 		self.ide=ide
 		self.tittle=tittle
@@ -15,7 +15,7 @@ class diccionario:
 
 		for word in word_list:
 			d[word] = d.get(word, 0) + 1
-		self.count=d[word]
+		self.count=d[palabra]
 
 
 	def getId(self):
