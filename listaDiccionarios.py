@@ -12,7 +12,7 @@ class listaDiccionarios:
 		dic=None
 		for i in range(len(ide)):
 			dic=diccionario(contenidos[i],ide[i],tittles[i])
-			print(dic.getCount(word))
+			print(dic.getCount("house"))
 			self.diccionarios.append(diccionario(dic))
 			dic=None
 
