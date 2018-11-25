@@ -9,12 +9,8 @@ class listaDiccionarios:
 		contenidos=csv['content']
 		tittles=csv['title']
 		ide=csv['id']
-		dic=None
 		for i in range(len(ide)):
-			dic=diccionario(contenidos[i],ide[i],tittles[i])
-			print("-->",dic.getCount("house"))
-			self.diccionarios.append(dic)
-			dic=None
+			self.diccionarios.append(diccionario(contenidos[i],ide[i],tittles[i]))
 
 		#return self.diccionarios
 

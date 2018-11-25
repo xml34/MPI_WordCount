@@ -6,6 +6,7 @@ class diccionario:
 	def __init__(self,text,ide,tittle):
 		self.ide=ide
 		self.tittle=tittle
+		self.d={}
 
 		for char in '-.,\n':
 			text=text.replace(char,' ')
