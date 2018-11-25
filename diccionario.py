@@ -4,7 +4,6 @@ class diccionario:
 	d={}
 	
 	def __init__(self,text,ide,tittle):
-		x={}
 		self.ide=ide
 		self.tittle=tittle
 
@@ -14,8 +13,7 @@ class diccionario:
 		word_list=text.split()
 
 		for word in word_list:
-			x[word] = x.get(word, 0) + 1
-		self.d=x
+			self.d[word] = self.d.get(word, 0) + 1
 
 	def getId(self):
 		return self.ide
