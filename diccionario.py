@@ -13,11 +13,11 @@ class diccionario:
 		text = text.lower()
 		word_list=text.split()
 
-		d["house"]=d.get("house", 0) + 1
+		d[palabra]=d.get(palabra, 0) + 1
 		
 		for word in word_list:
 			d[word] = d.get(word, 0) + 1
-		self.count=d["house"]
+		self.count=d[palabra]
 		
 
 
