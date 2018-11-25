@@ -14,6 +14,7 @@ class diccionario:
 
 		for word in word_list:
 			self.d[word] = self.d.get(word, 0) + 1
+		print(self.d[word])
 
 	def getId(self):
 		return self.ide
