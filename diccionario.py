@@ -19,7 +19,7 @@ class diccionario:
 		try:	
 			self.count=d["house"]
 		except ValueError:
-			#nada	
+			pass	
 
 
 
