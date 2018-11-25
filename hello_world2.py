@@ -39,11 +39,17 @@ def top10():
 comm = MPI.COMM_WORLD
 l1,l2,l3=top10()
 if comm.rank == 1:
-	print("csv 1: ",np.array(l1))
+	print("------primeros 10 articulo1-------")
+	print(np.array(l1))
+	print("----------------------------------")
 
 if comm.rank == 2:
-	print("csv 2: ",np.array(l2))
+	print("------primeros 10 articulo2-------")
+	print(np.array(l2))
+	print("----------------------------------")
 
 if comm.rank == 3:
-	print("csv 3: ",np.array(l3))
+	print("------primeros 10 articulo3-------")
+	print(np.array(l3))
+	print("----------------------------------")
 
