@@ -10,7 +10,6 @@ from mpi4py import MPI
 
 #word = input('introduce la palabra entre comillas: ')
 def top10():
-	comm = MPI.COMM_WORLD
 	print("cosaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
 	print (sys.argv[1])
 	lista1=[]
@@ -37,7 +36,7 @@ def top10():
 
 	return lista1,lista2,lista3
 
-
+comm = MPI.COMM_WORLD
 l1,l2,l3=top10()
 if comm.rank == 1:
 	print("lista 1: ",l1)
