@@ -8,7 +8,8 @@ import pandas as pd
 
 
 def top10():
-	word = input('introduce la palabra entre comillas: ')	
+	word = input('introduce la palabra entre comillas: ')
+	comm = MPI.COMM_WORLD
 	print ('My rank is', comm.rank)
 	lista1=[]
 	lista2=[]
@@ -34,7 +35,7 @@ def top10():
 
 	return lista1,lista2,lista3
 
-comm = MPI.COMM_WORLD
+
 l1,l2,l3=top10()
 print(l1)
 
