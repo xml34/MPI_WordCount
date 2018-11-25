@@ -9,7 +9,7 @@ class listaDiccionarios:
 
 	def __init__(self,csv):
 		contenidos=csv['content']
-		tittles=csv['tittle']
+		tittles=csv['title']
 		ide=csv['id']
 		print(contenidos[1],ide[1],tittle[1])
 		for i in range(len(ide)):
