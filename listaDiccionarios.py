@@ -9,10 +9,13 @@ class listaDiccionarios:
 		contenidos=csv['content']
 		tittles=csv['title']
 		ide=csv['id']
+		dic=None
 		for i in range(len(ide)):
-			self.diccionarios.append(diccionario(contenidos[i],ide[i],tittles[i]))
-			print(self.diccionarios[0].getCount)
-		
+			dic=diccionario(contenidos[i],ide[i],tittles[i])
+			print(dic.getCount(word))
+			self.diccionarios.append(diccionario(dic))
+			dic=None
+
 		#return self.diccionarios
 
 	def searchTop10(self,word):
