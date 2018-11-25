@@ -3,7 +3,7 @@ class diccionario:
 	tittle=None
 	count=None
 	
-	def __init__(self,text,ide,tittle):
+	def __init__(self,text,ide,tittle,palabra):
 		self.ide=ide
 		self.tittle=tittle
 		d={}
@@ -13,14 +13,12 @@ class diccionario:
 		text = text.lower()
 		word_list=text.split()
 
-		d["house"]=d.get("house", 0) + 1
 		for word in word_list:
 			d[word] = d.get(word, 0) + 1
 		try:	
-			self.count=d["house"]
+			self.count=d[palabra]
 		except ValueError:
 			pass	
-
 
 
 	def getId(self):
@@ -29,5 +27,5 @@ class diccionario:
 	def getTittle(self):
 		return self.tittle
 
-	def getCount(self,word):
+	def getCount(self):
 		return self.count
