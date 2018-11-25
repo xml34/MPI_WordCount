@@ -39,5 +39,12 @@ def top10():
 
 
 l1,l2,l3=top10()
-print("lista 1: ",l1)
+if comm.rank == 1:
+	print("lista 1: ",l1)
+
+if comm.rank == 2:
+	print("lista 1: ",l2)
+
+if comm.rank == 3:
+	print("lista 1: ",l3)
 
