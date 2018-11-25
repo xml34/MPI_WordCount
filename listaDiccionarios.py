@@ -13,7 +13,7 @@ class listaDiccionarios:
 		for i in range(len(ide)):
 			dic=diccionario(contenidos[i],ide[i],tittles[i])
 			print("-->",dic.getCount("house"))
-			self.diccionarios.append(diccionario(dic))
+			self.diccionarios.append(dic)
 			dic=None
 
 		#return self.diccionarios
