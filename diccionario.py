@@ -1,11 +1,12 @@
 class diccionario:
 	ide=None
 	tittle=None
-	d={}
+	count=None
 	
 	def __init__(self,text,ide,tittle):
 		self.ide=ide
 		self.tittle=tittle
+		d={}
 
 		for char in '-.,\n':
 			text=text.replace(char,' ')
@@ -13,7 +14,10 @@ class diccionario:
 		word_list=text.split()
 
 		for word in word_list:
-			self.d[word] = self.d.get(word, 0) + 1
+			d[word] = d.get(word, 0) + 1
+		self.count=d[sys.argv[1]+""]
+
+
 
 	def getId(self):
 		return self.ide
@@ -22,4 +26,4 @@ class diccionario:
 		return self.tittle
 
 	def getCount(self,word):
-		return self.d[word]
+		return self.count
