@@ -11,7 +11,9 @@ class listaDiccionarios:
 		contenidos=csv['content']
 		tittles=csv['title']
 		ide=csv['id']
+		print("comienzaaaaaaaaaaaaaaaaaa")
 		print(contenidos[1],ide[1],tittles[1])
+		print("terminaaaaaaaaaaaaaaaaaaa")
 		for i in range(len(ide)):
 			self.diccionarios.append(diccionario(contenidos[i],ide[i],tittles[i]))
 		#return self.diccionarios
