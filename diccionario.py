@@ -16,7 +16,10 @@ class diccionario:
 		d["house"]=d.get("house", 0) + 1
 		for word in word_list:
 			d[word] = d.get(word, 0) + 1
-		self.count=d["house"]
+		try:	
+			self.count=d["house"]
+		except ValueError:
+			#nada	
 
 
 
